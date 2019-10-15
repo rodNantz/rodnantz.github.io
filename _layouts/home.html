@@ -8,9 +8,9 @@
       {{ content }}
     </div>
 
-    <div class="my-6">
-      {% include projects.html %}
-    </div>
+    {% if site.savoirs %}
+      {% include specialties.html %}
+    {% endif %}
 
     {% if site.topics %}
       <div class="my-6">
@@ -23,6 +23,10 @@
         {% include thoughts.html %}
       </div>
     {% endunless %}
+
+    <div class="my-6">
+      {% include projects.html %}
+    </div>
   </div>
 {% else %}
   <div class="d-md-flex {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
@@ -38,7 +42,9 @@
           </div>
         {% endunless %}
 
-        {% include projects.html %}
+        {% if site.savoirs %}
+          {% include specialties.html %}
+        {% endif %}
 
         {% if site.topics %}
           {% include interests.html %}
@@ -47,6 +53,8 @@
         {% unless posts_total == 0 %}
           {% include thoughts.html %}
         {% endunless %}
+
+        {% include projects.html %}
       </div>
     </div>
   </div>

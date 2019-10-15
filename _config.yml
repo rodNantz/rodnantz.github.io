@@ -1,4 +1,4 @@
-layout: sidebar
+layout: stacked
 style: light
 
 plugins:
@@ -15,13 +15,46 @@ defaults:
     values:
       layout: "post"
 
-topics:
-  - name: Java
+# specialties      
+savoirs:
+  - name: Java EE
     web_url: https://github.com/topics/java
     image_url: https://p7.hiclipart.com/preview/405/878/407/java-runtime-environment-computer-icons-java-platform-standard-edition-java.jpg
 
-  - name: Full-stack development
+  - name: Weblogic
+    web_url: https://github.com/topics/weblogic
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
+  - name: Web services
+    web_url: https://github.com/topics/rest
+
+  - name: Jetty
+    web_url: https://github.com/topics/jetty
+
+  - name: Apache Ant
+    web_url: https://github.com/topics/jetty
+
+  - name: Angular / Typescript
+    web_url: https://github.com/topics/angular
+
+  
+
+    
+topics:
+  - name: JavaScript
+    web_url: https://github.com/topics/javascript
+
+  - name: Machine Learning
+  
+  - name: CSS
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+
+  - name: Functional Programming
+
+  - name: Scala
+
+  - name: Docker
+
+  - name: Mobile development
+    web_url: https://github.com/topics/sass
+    
+  - name: Spring
