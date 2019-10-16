@@ -8,22 +8,26 @@
       {{ content }}
     </div>
 
+    <!-- main skills -->
     {% if site.savoirs %}
       {% include specialties.html %}
     {% endif %}
 
-    {% if site.topics %}
-      <div class="my-6">
-        {% include interests.html %}
-      </div>
-    {% endif %}
-
+    <!-- posts : portfolio -->
     {% unless posts_total == 0 %}
       <div class="my-6">
         {% include thoughts.html %}
       </div>
     {% endunless %}
 
+    <!-- other interests -->
+    {% if site.topics %}
+      <div class="my-6">
+        {% include interests.html %}
+      </div>
+    {% endif %}
+
+    <!-- github projects -->
     <div class="my-6">
       {% include projects.html %}
     </div>
@@ -46,13 +50,13 @@
           {% include specialties.html %}
         {% endif %}
 
-        {% if site.topics %}
-          {% include interests.html %}
-        {% endif %}
-
         {% unless posts_total == 0 %}
           {% include thoughts.html %}
         {% endunless %}
+
+        {% if site.topics %}
+          {% include interests.html %}
+        {% endif %}
 
         {% include projects.html %}
       </div>
