@@ -18,6 +18,11 @@
         <a href="https://github.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
           @{{ user.login }}
         </a>
+        <img class="v-align-middle" style="height:20px; margin-right: 7px; margin-left: 10px;" alt="gitlab"
+             src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" >	
+        <a href="https://gitlab.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+          @{{ user.login }}
+        </a>
       </div>
     {% endif %}
     {% if user.email %}
