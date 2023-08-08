@@ -1,20 +1,10 @@
 <div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
   <div class="d-flex flex-justify-between flex-items-start mb-1">
-    <h1 class="f4 lh-default mb-1" style="padding-top: 10px;">
-      <a href="{{ post.url }}">
+    <h1 class="f4 lh-condensed mb-1">
+      <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
-    <figure class="f4 lh-default mb-1">
-        <img src="{{ post.image }}"
-            alt="{{ post.title }}" width="50px" height="auto">	
-    </figure>
   </div>
-  <div class="text-gray mb-2 ws-normal">
-    {{ post.date | date: "%b, %Y"}}
-    {% if post.due-date %}
-      - {{ post.due-date }}
-    {% endif %}
-  </div>
-  <!-- removed %d from date -->
+  <div class="text-gray mb-2 ws-normal">{{ post.date | date: "%b %d, %Y"}}</div>
 </div>
